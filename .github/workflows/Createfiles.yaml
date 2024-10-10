@@ -15,7 +15,7 @@ jobs:
 
       - name: Create package.json files
         run: |
-          for i in {1..40}; do
+          for i in {41..100}; do
             file_name="file_${i}package.json"
             cat <<EOF > "$file_name"
           {
