@@ -1050,7 +1050,7 @@ jobs:
         run: |
           git config --local user.email "sunilsindur@gmail.com"
           git config --local user.name "Sunilsindur"
-          git add *.package.json
+          git add *package.json
           git commit -m "Create 20 package.json files"
           git push
 
