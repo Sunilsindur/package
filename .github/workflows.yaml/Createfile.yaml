@@ -1,0 +1,1056 @@
+name: Create Package JSON Files
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create package.json files
+        run: |
+          for i in {1..40}; do
+            file_name="file_${i}package.json"
+            cat <<EOF > "$file_name"
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          {
+            "name": "background_color_changer",
+            "version": "0.1.0",
+            "private": true,
+            "dependencies": {
+            "@testing-library/jest-dom": "^5.17.0",
+            "@testing-library/react": "^13.4.0",
+            "@testing-library/user-event": "^13.5.0",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-scripts": "5.0.1",
+            "web-vitals": "^2.1.4"
+          },
+          "scripts": {
+            "start": "react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+          },
+          "eslintConfig": {
+            "extends": [
+              "react-app",
+              "react-app/jest"
+            ]
+          },
+          "browserslist": {
+            "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+            ],
+            "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+            ]
+          },
+          "devDependencies": {
+            "tailwindcss": "^3.3.3"
+          }
+          }
+          EOF
+          done
+          
+      - name: Commit files
+        run: |
+          git config --local user.email "sunilsindur@gmail.com"
+          git config --local user.name "Sunilsindur"
+          git add *.package.json
+          git commit -m "Create 20 package.json files"
+          git push
+
